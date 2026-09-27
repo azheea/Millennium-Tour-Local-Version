@@ -47,7 +47,7 @@ python tools/publish_hot.py --hot-only --apk /tmp/qnzl-next.apk
 
 客户端读取地址（勿改，已硬编码进游戏）：
 
-- 清单：`https://raw.githubusercontent.com/Ostwind23/qnzl-local-dist/main/files.json`
-- 文件池：`https://api.github.com/repos/Ostwind23/qnzl-local-dist/releases/tags/hot-pool`
+- 清单：`https://raw.githubusercontent.com/azheea/Millennium-Tour-Local-Version/main/files.json`
+- 文件池：`https://api.github.com/repos/azheea/Millennium-Tour-Local-Version/releases/tags/hot-pool`
 
 注意：Python 后端模块和 dex 补丁层的改动**不能**走热更新，必须发新 APK。

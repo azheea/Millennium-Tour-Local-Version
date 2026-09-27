@@ -1,0 +1,15 @@
+name: Publish game resources
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish resource packs and version manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/publish_game_resources.py
